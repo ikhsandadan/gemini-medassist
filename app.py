@@ -7,8 +7,6 @@ import os, sys
 
 sys.path.insert(0, './')
 
-st.set_page_config(layout="wide")
-
 # Load environment variables
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
 GEOAPIFY_API_KEY = st.secrets["GEOAPIFY_API_KEY"]
