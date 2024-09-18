@@ -38,7 +38,7 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 ## How It Works
 -   **Image Analysis**: Upload a medical image, and MedAssist AI will analyze it, providing detailed findings, potential next steps, and treatment suggestions.
 -   **Chat Assistance**: Ask health-related questions, and receive clear, concise responses backed by AI-powered medical knowledge.
--   **Hospital Locator**: Allow location access to view nearby hospitals on an interactive map, complete with contact information and directions.
+-   **Hospital Locator**: Allow location access to view nearby hospitals on an interactive map, complete with contact information.
 
 
 ## Video Demo
