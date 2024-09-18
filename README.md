@@ -15,15 +15,15 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 ## Key Features
 -   **Medical Image Analysis**: Upload medical images for AI-powered analysis, providing detailed insights and potential next steps.
     <details><summary>Image</summary>
-    ![2](https://github.com/user-attachments/assets/7b81dd92-413a-42d1-9a6e-f09ce1e1f4df)
+        <img src="https://github.com/user-attachments/assets/7b81dd92-413a-42d1-9a6e-f09ce1e1f4df">
     </details>
 -   **Interactive Chatbot**: Engage with MedAssist AI for general medical information and health-related questions.
     <details><summary>Image</summary>
-    ![4](https://github.com/user-attachments/assets/53869c69-dd27-414b-b05e-dc48be9cde1f)
+        <img src="https://github.com/user-attachments/assets/53869c69-dd27-414b-b05e-dc48be9cde1f">
     </details>
 -   **Nearby Hospital Locator**: Find and visualize nearby hospitals based on your current location.
     <details><summary>Image</summary>
-    ![3](https://github.com/user-attachments/assets/abea3efa-d18e-4b9f-a5d6-225231103770)
+        <img src="https://github.com/user-attachments/assets/abea3efa-d18e-4b9f-a5d6-225231103770">
     </details>
 
 
