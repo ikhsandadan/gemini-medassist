@@ -42,5 +42,5 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 
 
 ## Video Demo
-
+[![MedAssist-demo](https://img.youtube.com/vi/Z89RG-FRPEc/0.jpg)](https://www.youtube.com/watch?v=Z89RG-FRPEc)
 
