@@ -1,14 +1,12 @@
 import streamlit as st
 import google.generativeai as genai
-from dotenv import find_dotenv, dotenv_values
 import requests
 import folium
 from streamlit_folium import folium_static
 
 # Load environment variables
-config = dotenv_values(find_dotenv())
-GEMINI_API_KEY = config.get('GEMINI_API_KEY')
-GEOAPIFY_API_KEY = config.get('GEOAPIFY_API_KEY')
+GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
+GEOAPIFY_API_KEY = st.secrets["GEOAPIFY_API_KEY"]
 
 # Configure Gemini AI
 genai.configure(api_key=GEMINI_API_KEY)
