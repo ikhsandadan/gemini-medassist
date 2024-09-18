@@ -3,6 +3,7 @@ import streamlit as st
 import google.generativeai as genai
 import requests
 import folium
+import os, sys
 from streamlit_folium import folium_static
 from streamlit_geolocation import streamlit_geolocation
 from streamlit_chat import message
