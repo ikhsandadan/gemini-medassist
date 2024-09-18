@@ -4,6 +4,7 @@ import requests
 import folium
 from streamlit_folium import folium_static
 import os, sys
+from streamlit_geolocation import streamlit_geolocation
 
 sys.path.insert(0, './')
 
@@ -42,16 +43,6 @@ Important Notes:
 
 Your insights are invaluable in guiding clinical decisions. Please proceed with the analysis, adhering to the structured approach outlined above.
 """
-
-def get_user_location():
-    try:
-        response = requests.get('https://ipapi.co/json/')
-        if response.status_code == 200:
-            data = response.json()
-            return data['latitude'], data['longitude']
-    except:
-        st.error("Unable to retrieve location. Using default location.")
-    return None, None  # Default to None if unable to get location
 
 def get_nearby_hospitals(lat, lon):
     url = f"https://api.geoapify.com/v2/places?categories=healthcare.hospital&filter=circle:{lon},{lat},5000&limit=5&apiKey={GEOAPIFY_API_KEY}"
@@ -92,6 +83,15 @@ st.image("logo.png", width=200)
 st.title("Medical AI Assistant")
 st.subheader("An AI application Assistant for Healthcare Powered by Gemini AI")
 
+st.write("To enable your location for nearby hospital recommendations, please allow access to your location by clicking this button: ")
+location = streamlit_geolocation()
+user_lat = location['latitude']
+user_lon = location['longitude']
+if user_lat is not None and user_lon is not None:
+    st.success(f"Location retrieved: {user_lat}, {user_lon}")
+else:
+    st.error("Unable to retrieve location. Please allow access to your location by clicking the button.")
+
 uploaded_file = st.file_uploader("Upload the medical image for analysis", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
@@ -123,7 +123,6 @@ if uploaded_file is not None:
             st.info("Remember: Always consult with a healthcare professional for accurate diagnosis and treatment.")
 
         # Get user's location and nearby hospitals
-        user_lat, user_lon = get_user_location()
         if user_lat and user_lon:
             nearby_hospitals = get_nearby_hospitals(user_lat, user_lon)
             if nearby_hospitals:
