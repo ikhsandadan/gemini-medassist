@@ -19,10 +19,10 @@ genai.configure(api_key=GEMINI_API_KEY)
 
 # Create the Gemini AI model with specific generation config
 generation_config = {
-    "temperature": 0.7,
-    "top_p": 0.95,
-    "top_k": 64,
-    "max_output_tokens": 8192,
+  "temperature": 1,
+  "top_p": 0.95,
+  "top_k": 64,
+  "max_output_tokens": 8192,
 }
 model = genai.GenerativeModel(
     model_name="gemini-1.5-pro",
