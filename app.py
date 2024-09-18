@@ -3,6 +3,11 @@ import google.generativeai as genai
 import requests
 import folium
 from streamlit_folium import folium_static
+import os, sys
+
+sys.path.insert(0, './')
+
+st.set_page_config(layout="wide")
 
 # Load environment variables
 GEMINI_API_KEY = st.secrets["GEMINI_API_KEY"]
