@@ -52,24 +52,23 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 1.  Clone the repository:
 	
 
-    git clone https://github.com/ikhsandadan/gemini-medassist.git
-    cd gemini-medassist
+    ```git clone https://github.com/ikhsandadan/gemini-medassist.git```
+    ```cd gemini-medassist```
 
 2. Install required packages:
 	
 
-    pip install -r requirements.txt
+    ```pip install -r requirements.txt```
   
 3. Set up environment variables: Create a `.env` file in the project root with the following:
 
-    GEMINI_API_KEY=your_gemini_api_key
-    GEOAPIFY_API_KEY=your_geoapify_api_key
+    ```GEMINI_API_KEY=your_gemini_api_key GEOAPIFY_API_KEY=your_geoapify_api_key```
   
   ### Running the Application
 
 1.  Start the Streamlit app:
 
-    streamlit run app.py
+    ```streamlit run app.py```
     
 2. Open your web browser and navigate to `http://localhost:8501` to use Gemini MedAssist.
 
