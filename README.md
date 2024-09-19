@@ -60,9 +60,11 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 3. Install required packages:
 	
 
-    ```pip install -r requirements.txt```
+    ```
+   pip install -r requirements.txt
+    ```
   
-4. Set up environment variables: Create a `.env` file in the project root with the following:
+5. Set up environment variables: Create a `.env` file in the project root with the following:
 
     ```
     GEMINI_API_KEY=your_gemini_api_key
@@ -73,9 +75,11 @@ MedAssist AI is an innovative healthcare application powered by Gemini AI, desig
 
 1.  Start the Streamlit app:
 
-    ```streamlit run app.py```
+    ```
+    streamlit run app.py
+    ```
     
-2. Open your web browser and navigate to `http://localhost:8501` to use Gemini MedAssist.
+3. Open your web browser and navigate to `http://localhost:8501` to use Gemini MedAssist.
 
 
 ## Video Demo
